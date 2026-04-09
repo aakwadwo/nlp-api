@@ -212,4 +212,4 @@ In Docker, this is set automatically via `docker-compose.yml`.
 
 ## Built By
 
-Kwadwo Amooah Asumadu — as part of an NLP Systems Engineering project covering API development, database integration, authentication, ML model deployment, containerisation, and full-stack design.
+Kwadwo Amoah Asumadu — as part of an NLP Systems Engineering project covering API development, database integration, authentication, ML model deployment, containerisation, and full-stack design.
