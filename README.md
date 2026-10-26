@@ -69,6 +69,13 @@ pip install scikit-learn nltk pandas numpy
 python model/train.py
 ```
 
+Create a `.env` file with a JWT signing key. The API refuses to start
+without one:
+
+```bash
+cp .env.example .env   # then set SECRET_KEY
+```
+
 Then start everything:
 
 ```bash
@@ -108,7 +115,11 @@ python model/train.py
 
 **Step 4 — Start the API**
 
+Set `SECRET_KEY` (and `DATABASE_URL` if your database credentials differ from
+the default), then start the server:
+
 ```bash
+export SECRET_KEY="$(python -c 'import secrets; print(secrets.token_urlsafe(32))')"
 uvicorn main:app --reload
 ```
 
